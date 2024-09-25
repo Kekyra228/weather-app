@@ -8,6 +8,14 @@ const getWeatherGlow = (weatherType) => {
       return "drop-shadow(0 0 10px rgba(180, 180, 180, 0.6))"; // Облачное свечение
     case "Rain":
       return "drop-shadow(0 0 10px rgba(0, 100, 255, 0.8))"; // Дождливое синее свечение
+    case "Thunderstorm":
+      return "drop-shadow(0 0 30px #FF4500)";
+    case "Snow":
+      return "drop-shadow(0 0 30px #FFFFFF)";
+    case "Mist":
+      return "drop-shadow(0 0 30px #778899)";
+    case "overcast clouds":
+      return "drop-shadow(0 0 30px #8C92AC)";
     default:
       return "drop-shadow(0 0 10px rgba(255, 255, 255, 0.5))";
   }
