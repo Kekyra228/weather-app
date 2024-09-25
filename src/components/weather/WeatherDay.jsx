@@ -1,9 +1,10 @@
 import PropTypes from "prop-types";
 import React from "react";
 import { WeatherDate, WeatherDayCard } from "./WeatherDay.styled";
+import { formatDate } from "../../utils";
 
 const WeatherDay = ({ data }) => {
-  const date = new Date(data.dt_txt).toLocaleDateString();
+  const date = formatDate(data.dt_txt);
   return (
     <WeatherDayCard>
       <WeatherDate>{date}</WeatherDate>
