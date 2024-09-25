@@ -1,9 +1,10 @@
 import PropTypes from "prop-types";
 import React from "react";
+import { ForecastCard } from "./Details.styled";
 
 const Details = ({ data }) => {
   return (
-    <div>
+    <ForecastCard>
       <h2>Погода в {data.name}</h2>
       <p>Температура: {data.main.temp}°C</p>
       <p>Влажность: {data.main.humidity}%</p>
@@ -13,7 +14,7 @@ const Details = ({ data }) => {
         alt={data.weather[0].description}
       />
       <p>{data.weather[0].description}</p>
-    </div>
+    </ForecastCard>
   );
 };
 Details.propTypes = {
