@@ -8,7 +8,7 @@ const WeatherList = ({ data }) => {
 
   return (
     <div>
-      <WeatherTitle>Прогноз на 5 дней</WeatherTitle>
+      <WeatherTitle>Прогноз на 5 дней ☁️</WeatherTitle>
       <WeatherListContainer>
         {dailyForecasts.map((dayForecast, index) => (
           <WeatherDay key={index} data={dayForecast} />

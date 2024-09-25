@@ -9,6 +9,7 @@ export const AppWrapper = styled.div`
   /* margin: 0 auto;
   padding: 2rem; */
   text-align: center;
+  transition: background-color 1s ease;
 
   @media (max-width: 768px) {
     padding: 15px;

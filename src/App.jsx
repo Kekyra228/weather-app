@@ -64,7 +64,7 @@ function App() {
     <AppWrapper bgcolor={bgColor}>
       <Container>
         <Contain>
-          <Title>Прогноз Погоды</Title>
+          <Title>Прогноз Погоды </Title>
           {/* Компонент для поиска города */}
           <SearchBar onSearch={handleSearch} />
           {loading ? <Loader /> : weekData && <Details data={weatherData} />}

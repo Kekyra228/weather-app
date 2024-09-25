@@ -1,5 +1,18 @@
 import styled from "styled-components";
 
+const getWeatherGlow = (weatherType) => {
+  switch (weatherType) {
+    case "Clear":
+      return "drop-shadow(0 0 15px rgba(255, 223, 0, 0.8))"; // Солнечный свет
+    case "Clouds":
+      return "drop-shadow(0 0 10px rgba(180, 180, 180, 0.6))"; // Облачное свечение
+    case "Rain":
+      return "drop-shadow(0 0 10px rgba(0, 100, 255, 0.8))"; // Дождливое синее свечение
+    default:
+      return "drop-shadow(0 0 10px rgba(255, 255, 255, 0.5))";
+  }
+};
+
 export const WeatherDayCard = styled.div`
   background: #fff;
   border-radius: 10px;
@@ -31,7 +44,14 @@ export const WeatherInfo = styled.p`
 `;
 
 export const WeatherIcon = styled.img`
-  width: 80px;
-  height: 80px;
-  margin: 10px 0;
+  width: 70px;
+  height: 70px;
+
+  filter: ${(props) => getWeatherGlow(props.weatherType)};
+  transition: filter 0.3s ease;
+
+  &:hover {
+    filter: brightness(1.6) contrast(1.8)
+      drop-shadow(0 0 30px rgba(0, 255, 255, 1));
+  }
 `;
