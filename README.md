@@ -27,11 +27,11 @@
    git clone https://github.com/Kekyra228/weather-app.git
 
 2. Перейдите в директорию проекта:
-
+```bash
    cd weather-app
    
 3. Установите зависимости:
-
+```bash
    npm install
 
 4. В корневой папке проекта создайте новый файл с именем .env и добавьте ваш реальный API-ключ, который вы получили от OpenWeatherMap:
@@ -39,11 +39,11 @@
    VITE_API_KEY=ваш_ключ
 
 5. Запустите приложение в режиме разработки
-
+```bash
    npm run dev
 
 6. Для запуска тестов:
-
+```bash
    npm test
 
 
