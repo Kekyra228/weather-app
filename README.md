@@ -27,7 +27,7 @@
    git clone https://github.com/Kekyra228/weather-app.git
 
 2. Перейдите в директорию проекта:
-```bash
+
    cd weather-app
    
 3. Установите зависимости:
